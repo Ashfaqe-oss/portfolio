@@ -474,8 +474,8 @@ header h2 {
   }
   .square2 {
     position: absolute;
-    bottom: 113px;
-    right: 113px;
+    bottom: 107px;
+    right: 114px;
     height: 67px;
     width: 67px;
     border-radius: 39px 0 39px 39px;
@@ -493,8 +493,8 @@ header h2 {
   }
   .square3 {
     position: absolute;
-    bottom: 210px;
-    right: 28px;
+    bottom: 175px;
+    right: 23px;
     height: 89px;
     width: 89px;
     border-radius: 0 39px 39px 39px;
@@ -512,8 +512,8 @@ header h2 {
   }
   .square4 {
     position: absolute;
-    bottom: 315px;
-    right: 133px;
+    bottom: 265px;
+    right: 113px;
     height: 49px;
     width: 49px;
     border-radius: 0 39px 39px 39px;
@@ -533,7 +533,7 @@ header h2 {
   .square5 {
     position: absolute;
     bottom: 0;
-    right: 153px;
+    right: 143px;
     height: 77px;
     width: 77px;
     border-radius: 39px 39px 39px 0;
