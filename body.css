@@ -105,6 +105,13 @@ p {
   }
 }
 
+
+@media (min-width: 1101px) {
+  #aboutMe {
+    margin: 3em 5em;
+  }
+}
+
 #skills {
   display: -webkit-box;
   display: -ms-flexbox;
