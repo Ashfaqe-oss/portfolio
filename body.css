@@ -3,6 +3,10 @@ body {
   background-color: #fff5f5;
 }
 
+html {
+  scroll-behaviour: smooth;
+}
+
 p {
   margin: 0;
 }
