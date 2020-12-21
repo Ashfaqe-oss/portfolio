@@ -457,8 +457,8 @@ header h2 {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 133px;
-    height: 133px;
+    width: 113px;
+    height: 113px;
     border-radius: 39px 39px 0 39px;
     background-color: #ffaec2;
   }
@@ -474,10 +474,10 @@ header h2 {
   }
   .square2 {
     position: absolute;
-    bottom: 133px;
-    right: 133px;
-    height: 77px;
-    width: 77px;
+    bottom: 113px;
+    right: 113px;
+    height: 67px;
+    width: 67px;
     border-radius: 39px 0 39px 39px;
     background-color: #0ba3e9;
   }
@@ -495,8 +495,8 @@ header h2 {
     position: absolute;
     bottom: 210px;
     right: 28px;
-    height: 105px;
-    width: 105px;
+    height: 89px;
+    width: 89px;
     border-radius: 0 39px 39px 39px;
     background-color: #5ad5c2;
   }
@@ -514,8 +514,8 @@ header h2 {
     position: absolute;
     bottom: 315px;
     right: 133px;
-    height: 55px;
-    width: 55px;
+    height: 49px;
+    width: 49px;
     border-radius: 0 39px 39px 39px;
     background-color: #f31f5f;
     z-index: 1;
@@ -534,8 +534,8 @@ header h2 {
     position: absolute;
     bottom: 0;
     right: 153px;
-    height: 85px;
-    width: 85px;
+    height: 77px;
+    width: 77px;
     border-radius: 39px 39px 39px 0;
     background-color: #d7ffb3;
     z-index: 1;
