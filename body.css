@@ -545,7 +545,7 @@ p {
 }
 
 #contact .contact__input button:hover {
-  background-color: #51ffe8;
+  background-color: rgb(65, 65, 65);
   border: 2px solid #af80c2;
   opacity: 0.9;
   color: #575757;
