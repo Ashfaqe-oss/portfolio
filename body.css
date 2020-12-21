@@ -258,6 +258,7 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;
+  transition: 0.3s linear;
 }
 
 #work video {
@@ -265,6 +266,7 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;
+  transition: 0.3s linear;
 }
 
 #work .featured__title {
