@@ -2,7 +2,7 @@ main {
   height: 100vh;
 }
 html {
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 a {
   color: #2e0641;
