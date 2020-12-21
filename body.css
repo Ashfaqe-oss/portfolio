@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  background-color: #fff5f5;
 }
 
 p {
@@ -98,17 +99,19 @@ p {
     margin: 0 auto;
   }
   .aboutContainer h2 {
-    font-size: 31px;
+    font-size: 33px;
   }
   #aboutMe {
     margin: 2em;
   }
 }
 
-
 @media (min-width: 1101px) {
   #aboutMe {
     margin: 3em 5em;
+  }
+  #aboutMe .about__content p {
+    padding: 25px;
   }
 }
 
@@ -153,7 +156,7 @@ p {
 
 #skills h2 {
   color: #240433;
-  margin: 65px 5% 35px;
+  margin: 75px 5% 35px;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   z-index: 2;
@@ -217,7 +220,7 @@ p {
     margin: 0 auto;
   }
   #skills .skill__h2 h2 {
-    font-size: 31px;
+    font-size: 33px;
   }
   #skills .transition2 {
     margin-bottom: -7.5em;
@@ -255,9 +258,13 @@ p {
 
 #work .work__container {
   text-align: center;
-  margin: 4.5em 0;
+  margin: 5.5em 0;
   border: 3px dashed rgba(15, 184, 249, 0.29);
   border-radius: 13px;
+}
+
+#work .work__left {
+  padding: 1em;
 }
 
 #work img {
@@ -265,7 +272,6 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;
-  transition: 0.3s linear;
 }
 
 #work video {
@@ -273,24 +279,56 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;
-  transition: 0.3s linear;
 }
 
 #work .featured__title {
-  font-size: 19px;
-  margin: 11px;
+  font-size: 25px;
+  margin: 21px 25px 35px;
   padding-top: 5px;
   font-weight: 700;
+  font-family: 'Roboto Slab', serif;
 }
 
 #work .featured__desc {
-  font-size: 13px;
+  font-size: 14px;
   margin: 10px 5px;
+}
+
+#work #projects {
+  width: 73%;
+  margin: 45px auto;
+  border-radius: 11px;
+  text-align: center;
+  background-color: #141c3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+#work #projects p {
+  font-size: 14px;
+  font-weight: 700;
+  font-stretch: ultra-expanded;
+}
+
+#work #projects img {
+  width: 29px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (min-width: 797px) {
   #work {
-    padding-top: 7em;
+    padding-top: 8em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -307,10 +345,11 @@ p {
     margin: 0 auto;
   }
   .work__h2 h2 {
-    font-size: 31px;
+    font-size: 33px;
   }
   .work__h2 h4 {
     text-align: left;
+    font-size: 19px;
   }
   .work__container {
     display: -webkit-box;
@@ -325,16 +364,16 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: auto;
+    margin: 3.5em auto !important;
   }
   .work__container img {
-    width: 497px !important;
+    width: 467px !important;
     -o-object-fit: contain;
        object-fit: contain;
     margin: 25px;
   }
   .work__container video {
-    width: 497px !important;
+    width: 467px !important;
     margin: 25px;
     -o-object-fit: contain;
        object-fit: contain;
@@ -344,6 +383,24 @@ p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: 100%;
+  }
+  .featured__title {
+    font-size: 25px;
+    margin: 11px;
+    padding-top: 5px;
+  }
+  .featured__desc {
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+  #projects {
+    font-size: 16px;
+  }
+  #projects img {
+    width: 39px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -358,6 +415,62 @@ p {
   }
   .work__container .work__left {
     margin: 1em;
+  }
+}
+
+#testimonials {
+  margin: 4.5em 1em;
+}
+
+#testimonials h2 {
+  width: 73%;
+  padding: 45px 5% 55px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+}
+
+#testimonials .testimonial__container img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 35px;
+}
+
+#testimonials .testimonial__container p {
+  margin: 3px;
+  font-size: 16px;
+}
+
+#testimonials .testimonial__container h4 {
+  margin: 3px;
+  margin-top: 2em;
+}
+
+#testimonials .testimonial__container .pokejungle {
+  font-size: 14px;
+  margin: 3px;
+}
+
+@media (min-width: 797px) {
+  #testimonials h2 {
+    font-size: 33px;
+  }
+  #testimonials .testimonial__container {
+    width: 53%;
+    padding: 45px 5% 55px;
+    margin: 0 auto;
+  }
+  #testimonials .testimonial__container p {
+    margin: 1em;
+    font-size: 20px;
+  }
+  #testimonials .testimonial__container h4 {
+    font-size: 18px;
+  }
+  #testimonials .testimonial__container .pokejungle {
+    font-size: 17px;
+    margin: 3px;
   }
 }
 
@@ -397,7 +510,7 @@ p {
 #contact .contact__input input {
   margin: 1em;
   margin-bottom: 2em;
-  height: 31px;
+  height: 33px;
   outline-width: 0;
   border-radius: 7px;
   border: none;
@@ -460,7 +573,7 @@ p {
     margin: 0 auto;
   }
   .contact__h2 h2 {
-    font-size: 31px;
+    font-size: 33px;
   }
   h2 {
     text-align: left;
@@ -468,7 +581,7 @@ p {
 }
 
 #footer {
-  background-color: #535353;
+  background-color: #414141;
   color: #fff;
   margin: 0;
 }
@@ -556,8 +669,8 @@ p {
 }
 
 #footer .social img {
-  width: 31px;
-  height: 31px;
+  width: 33px;
+  height: 33px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 0.1s linear;

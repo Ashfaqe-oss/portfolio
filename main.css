@@ -145,7 +145,7 @@ header h2 {
 
 @media (min-width: 827px) {
   #me {
-    margin-top: 13%;
+    margin-top: 11%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -164,11 +164,18 @@ header h2 {
 #me h1 {
   margin-top: 25px;
   font-size: 31px;
+  font-weight: 900 !important;
 }
 
 @media (min-width: 827px) {
   #me h1 {
     font-size: 39px;
+  }
+}
+
+@media (min-width: 1101px) {
+  #me h1 {
+    font-size: 43px;
   }
 }
 
@@ -546,24 +553,5 @@ header h2 {
     width: 39px;
     height: 39px;
   }
-}
-
-#projects {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 17px;
-  background-color: #af80c2;
-  cursor: pointer;
-}
-
-#projects a {
-  color: #fff;
-}
-
-#projects a span img {
-  width: 29px;
-  height: 29px;
-  padding-top: 5px;
 }
 /*# sourceMappingURL=main.css.map */
