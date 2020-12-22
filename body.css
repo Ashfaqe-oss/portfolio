@@ -467,6 +467,7 @@ p {
   }
   #testimonials .testimonial__container p {
     margin: 1em;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
   }
   #testimonials .testimonial__container h4 {
