@@ -39,7 +39,7 @@ gsap.from("#me", {
   duration: 2.1,
   x: -260,
   delay: 1.3,
-  stagger: 0.6,
+ 
   ease: Back.easeOut,
 });
 gsap.from("#free", {
