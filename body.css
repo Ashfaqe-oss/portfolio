@@ -160,14 +160,12 @@ p {
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   z-index: 2;
-  
 }
 
 #skills .skills__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -194,10 +192,11 @@ p {
 }
 
 #skills .transition2 .skill-title {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   margin: 1em;
   color: #0e0e2c;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 #skills .transition2 .skill-subtitle {
@@ -215,12 +214,17 @@ p {
 }
 
 @media (min-width: 797px) {
+  #skills .skill-title {
+    font-size: 23px !important;
+  }
   #skills .skills__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   #skills .skill__h2 {
     width: 73%;
@@ -228,6 +232,7 @@ p {
   }
   #skills .skill__h2 h2 {
     font-size: 33px;
+    margin-bottom: 55px;
   }
   #skills .transition2 {
     margin-bottom: -7.5em;
@@ -241,6 +246,28 @@ p {
   #skills .transition2:hover {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 0.75);
             box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 0.75);
+  }
+  #skills .skill-subtitle {
+    font-size: 17px !important;
+  }
+  #skills .skill-desc {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 1101px) {
+  #skills .transition2 div img {
+    width: 84px;
+    height: 84px;
+  }
+  #skills .skill-title {
+    font-size: 26px !important;
+  }
+  #skills .skill-subtitle {
+    font-size: 18px !important;
+  }
+  #skills .skill-desc {
+    font-size: 17px !important;
   }
 }
 
@@ -288,17 +315,30 @@ p {
   border-radius: 10px;
 }
 
+#work img:hover video:hover {
+  opacity: 0.75 !important;
+}
+
 #work .featured__title {
   font-size: 23px;
   margin: 21px 25px 35px;
   padding-top: 5px;
   font-weight: 700;
   font-family: 'Roboto Slab', serif;
+  color: #0e0e2c;
 }
 
-#work .featured__desc {
+#work .featured__desc1 {
   font-size: 14px;
-  margin: 10px 5px;
+  margin: 15px 5px;
+  color: #161743;
+  font-weight: 600;
+}
+
+#work .featured__desc2 {
+  font-size: 13px;
+  margin: 15px 5px;
+  color: #161743;
 }
 
 #work #projects {
@@ -375,7 +415,7 @@ p {
     margin: 3.5em auto !important;
   }
   .work__container img {
-    width: 457px !important;
+    width: 437px !important;
     -o-object-fit: contain;
        object-fit: contain;
     margin: 25px;
@@ -394,13 +434,15 @@ p {
     height: 100%;
   }
   .featured__title {
-    font-size: 27px;
+    font-size: 25px !important;
     margin: 11px;
     padding-top: 5px;
   }
-  .featured__desc {
-    font-size: 16px;
-    margin: 10px 5px;
+  .featured__desc1 {
+    font-size: 16px !important;
+  }
+  .featured__desc2 {
+    font-size: 15px !important;
   }
   #projects {
     font-size: 16px;
@@ -423,6 +465,17 @@ p {
   }
   .work__container .work__left {
     margin: 1em;
+  }
+  .work__container .featured__title {
+    font-size: 28px !important;
+  }
+  .work__container .featured__desc1 {
+    font-size: 18px !important;
+    margin: 25px 10px;
+  }
+  .work__container .featured__desc2 {
+    font-size: 17px !important;
+    margin: 25px 10px;
   }
 }
 
@@ -448,6 +501,8 @@ p {
 #testimonials .testimonial__container p {
   margin: 3px;
   font-size: 16px;
+  line-height: 1.9;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 #testimonials .testimonial__container h4 {
@@ -558,7 +613,7 @@ p {
   background-color: #51ffe8;
   border: 2px solid #af80c2;
   opacity: 0.9;
-  color: #414141;
+  color: #3b3b3b;
   font-weight: 600;
 }
 
