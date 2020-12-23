@@ -192,7 +192,11 @@ header h2 {
 
 .fre h4 {
   color: #000;
-  font-size: 13px;
+  
+}
+
+.fre h4 span {
+  font-size: 14px;
 }
 
 .fre p {
