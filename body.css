@@ -160,6 +160,7 @@ p {
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   z-index: 2;
+  
 }
 
 #skills .skills__container {
@@ -208,7 +209,7 @@ p {
 }
 
 #skills .transition2 .skill-desc {
-  font-size: 13px;
+  font-size: 14px;
   margin: 7px;
   color: black;
 }
