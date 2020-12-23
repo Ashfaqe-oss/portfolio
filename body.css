@@ -3,10 +3,6 @@ body {
   background-color: #fff5f5;
 }
 
-html {
-  scroll-behaviour: smooth;
-}
-
 p {
   margin: 0;
 }
@@ -197,19 +193,23 @@ p {
 
 #skills .transition2 .skill-title {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 1em;
+  color: #0e0e2c;
 }
 
 #skills .transition2 .skill-subtitle {
   font-size: 15px;
   font-weight: 500;
-  margin: 1em;
+  margin: 1.9em 1em 1.3em;
+  font-weight: 600;
+  color: #161743;
 }
 
 #skills .transition2 .skill-desc {
   font-size: 13px;
   margin: 7px;
+  color: black;
 }
 
 @media (min-width: 797px) {
@@ -228,16 +228,16 @@ p {
   }
   #skills .transition2 {
     margin-bottom: -7.5em;
-    -webkit-transition-delay: 3s ease-in;
-            transition-delay: 3s ease-in;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
     max-width: 430px;
   }
   #skills .transition2:last-child {
     margin-bottom: -7.5em;
   }
   #skills .transition2:hover {
-    -webkit-box-shadow: 0px 0px 13px 0px rgba(148, 148, 148, 0.75);
-            box-shadow: 0px 0px 13px 0px rgba(148, 148, 148, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 0.75);
+            box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 0.75);
   }
 }
 
@@ -286,7 +286,7 @@ p {
 }
 
 #work .featured__title {
-  font-size: 25px;
+  font-size: 23px;
   margin: 21px 25px 35px;
   padding-top: 5px;
   font-weight: 700;
@@ -314,7 +314,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  padding: 20px 15px;
+  padding: 1em;
   cursor: pointer;
 }
 
@@ -354,6 +354,7 @@ p {
   .work__h2 h4 {
     text-align: left;
     font-size: 19px;
+    text-align: center;
   }
   .work__container {
     display: -webkit-box;
@@ -371,13 +372,13 @@ p {
     margin: 3.5em auto !important;
   }
   .work__container img {
-    width: 467px !important;
+    width: 457px !important;
     -o-object-fit: contain;
        object-fit: contain;
     margin: 25px;
   }
   .work__container video {
-    width: 467px !important;
+    width: 457px !important;
     margin: 25px;
     -o-object-fit: contain;
        object-fit: contain;
@@ -390,7 +391,7 @@ p {
     height: 100%;
   }
   .featured__title {
-    font-size: 25px;
+    font-size: 27px;
     margin: 11px;
     padding-top: 5px;
   }
@@ -410,11 +411,11 @@ p {
 
 @media (min-width: 1101px) {
   .work__container img {
-    width: 597px !important;
+    width: 617px !important;
     margin: 25px;
   }
   .work__container video {
-    width: 597px !important;
+    width: 617px !important;
     margin: 25px;
   }
   .work__container .work__left {
@@ -443,8 +444,7 @@ p {
 
 #testimonials .testimonial__container p {
   margin: 3px;
-      font-family: 'Space Grotesk', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 #testimonials .testimonial__container h4 {
@@ -468,7 +468,6 @@ p {
   }
   #testimonials .testimonial__container p {
     margin: 1em;
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
   }
   #testimonials .testimonial__container h4 {
@@ -483,7 +482,7 @@ p {
 #contact {
   padding: 1em;
   color: #fff;
-  background-color: #7427a1;
+  background-color: #673AB7;
 }
 
 #contact .contact__h2 {
@@ -551,11 +550,18 @@ p {
 }
 
 #contact .contact__input button:hover {
-  background-color: rgb(65, 65, 65);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  background-color: #51ffe8;
   border: 2px solid #af80c2;
   opacity: 0.9;
-  color: #575757;
+  color: #414141;
   font-weight: 600;
+}
+
+#contact .contact__input button:active {
+  -webkit-transform: scale(1.01, 1.03);
+          transform: scale(1.01, 1.03);
 }
 
 @media (min-width: 427px) {
@@ -568,21 +574,30 @@ p {
 
 @media (min-width: 797px) {
   .contact__input {
-    width: 73%;
+    width: 63%;
     margin: 0 auto;
   }
   .contact__input button {
     margin: inherit auto;
   }
   .contact__h2 {
-    width: 73%;
+    width: 63%;
     margin: 0 auto;
   }
   .contact__h2 h2 {
     font-size: 33px;
   }
   h2 {
-    text-align: left;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1101px) {
+  .contact__input {
+    width: 49%;
+  }
+  .contact__h2 {
+    width: 49%;
   }
 }
 
