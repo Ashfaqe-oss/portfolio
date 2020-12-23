@@ -1,11 +1,13 @@
 main {
   height: 100vh;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 a {
   color: #2e0641;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -128,7 +130,7 @@ header h2 {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-top: 11%;
+  margin-top: 21%;
   margin-right: 7%;
   margin-left: 7%;
   padding: 10px 0;
@@ -476,10 +478,10 @@ header h2 {
   }
   .square2 {
     position: absolute;
-    bottom: 107px;
-    right: 114px;
-    height: 67px;
-    width: 67px;
+    bottom: 113px;
+    right: 113px;
+    height: 65px;
+    width: 65px;
     border-radius: 39px 0 39px 39px;
     background-color: #0ba3e9;
   }
@@ -495,10 +497,10 @@ header h2 {
   }
   .square3 {
     position: absolute;
-    bottom: 175px;
-    right: 23px;
-    height: 89px;
-    width: 89px;
+    bottom: 183px;
+    right: 26px;
+    height: 83px;
+    width: 83px;
     border-radius: 0 39px 39px 39px;
     background-color: #5ad5c2;
   }
@@ -514,10 +516,10 @@ header h2 {
   }
   .square4 {
     position: absolute;
-    bottom: 265px;
+    bottom: 271px;
     right: 113px;
-    height: 49px;
-    width: 49px;
+    height: 47px;
+    width: 47px;
     border-radius: 0 39px 39px 39px;
     background-color: #f31f5f;
     z-index: 1;
@@ -535,7 +537,7 @@ header h2 {
   .square5 {
     position: absolute;
     bottom: 0;
-    right: 143px;
+    right: 131px;
     height: 77px;
     width: 77px;
     border-radius: 39px 39px 39px 0;
