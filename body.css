@@ -336,7 +336,7 @@ p {
 }
 
 #work .featured__desc2 {
-  font-size: 14px;
+  font-size: 13px;
   margin: 15px 5px;
   color: #161743;
 }
@@ -496,7 +496,6 @@ p {
   width: 130px;
   height: 130px;
   margin: 35px;
-  object-fit: contain;
 }
 
 #testimonials .testimonial__container p {
@@ -542,6 +541,7 @@ p {
   padding: 1em;
   color: #fff;
   background-color: #673AB7;
+  position: relative;
 }
 
 #contact .contact__h2 {
@@ -590,11 +590,11 @@ p {
   padding: 7px 11px;
 }
 
-#contact .contact__input button {
+#contact button {
   border: none;
   padding: none;
-  margin: 2.5em auto;
-  height: 43px;
+  margin: 2.5em auto !important;
+  height: 39px;
   outline: none;
   border-radius: 11px;
   font-size: 17px;
@@ -608,7 +608,7 @@ p {
   width: 230px;
 }
 
-#contact .contact__input button:hover {
+#contact button:hover {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   background-color: #51ffe8;
@@ -618,9 +618,19 @@ p {
   font-weight: 600;
 }
 
-#contact .contact__input button:active {
+#contact button:active {
   -webkit-transform: scale(1.01, 1.03);
           transform: scale(1.01, 1.03);
+}
+
+#contact img {
+  opacity: 0;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (min-width: 427px) {
@@ -658,6 +668,30 @@ p {
   .contact__h2 {
     width: 49%;
   }
+}
+
+.emailjs-sending img {
+  opacity: 0.35 !important;
+}
+
+.emailjs-sending input {
+  opacity: 0.5 !important;
+}
+
+.emailjs-sending label {
+  opacity: 0.5 !important;
+}
+
+.emailjs-sending textarea {
+  opacity: 0.5 !important;
+}
+
+.emailjs-sending button {
+  opacity: 0.5 !important;
+}
+
+.emailjs-success img {
+  opacity: 1 !important;
 }
 
 #footer {

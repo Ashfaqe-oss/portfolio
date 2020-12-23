@@ -35,6 +35,8 @@
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
+
+                document.getElementById('contact-form').reset();
             });
         }
     </script>
@@ -335,14 +337,16 @@
         <form id="contact-form" class="contact__input">
 
             <input type="hidden" name="contact_number">
-            <label> Name</label>
+            <label>Name</label>
             <input name="user_name" type="text">
+
             <label>Email</label>
             <input name="user_email" type="email">
+
             <label>Message</label>
             <textarea name="message" placeholder="Wanna work together or any suggestions for me"></textarea>
-            <button type=submit value="Send">Submit</button>
-
+            <button class="button" type=submit value="Submit">Submit</button>
+            <img src="tick.png" alt="submitted">
         </form>
     </section>
     <section id="footer">
