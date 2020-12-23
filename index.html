@@ -14,6 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_rKBnWAlhQXhnKegNYfEMF");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -51,7 +75,7 @@
         </section>
         <section id="free">
             <div class="fre">
-                <h4>Want my help? <span> for free?? </span></h4>
+                <h4>Want my help? for free??</h4>
                 <p>
                     Part-time / Freelance
                 </p>
@@ -219,11 +243,11 @@
 
                 <p class="featured__title">Amazon Clone</p>
                 <p class="featured__desc1">A Complete E-Commerce app with the Amazon UI-UX, made responsive and with Stripe API payment integration and Scalable.</p>
-                <p class="featured__desc1"> React | Redux | Node | Firebase | Stripe API </p>
-                <p class="featured__desc2">Sign up using email and password | Add products to cart | Review cart | Proceed to checout | Enter Delivery details and add your card credentials hit Proceed to BUY | finally Review your Orders.
+                <p class="featured__desc1"> React| Redux | Node | Firebase | Stripe API </p>
+                <p class="featured__desc2">Sign up using email and password | Add products to cart | Review cart | Proceed to checout | Enter Delivery details and add your card credentials hit Proceed to BUY | n finally Review your Orders .
                 </p>
             </div>
-            <a target="_blank" rel="noopener noreferrer" href="https://clone-ii-db6b7.web.app/">
+            <a target="_blank" rel="noopener noreferrer" href="">
                 <img src="amazon.png" loop alt="work Image" class="work__pic">
             </a>
 
@@ -234,10 +258,10 @@
             </a>
             <div class="work__left">
                 <p class="featured__title">Whatsapp Clone</p>
-                <p class="featured__desc1">A Global Messaging app with Google and FaceBook User Auth and the Whatsapp UI.
+                <p class="featured__desc1">A Global Messaging app with Google and FaceBook User Auth and Whatsapp UI design.
                 </p>
                 <p class="featured__desc1"> React | Material UI | Firebase | Node | mongoDB | Express </p>
-                <p class="featured__desc2">Login with Google / Facebook | dynamic avatars ( keeps changing for no reason! haha🤣 ) | Create endless chat rooms | Invite any or Chat with anyone around the world about any freaking Topic | Delete messagges !
+                <p class="featured__desc2">Login with Google / Facebook | dynamic avatars ( keeps changing for no reason! haha ) | Create endless chat rooms | Invite any or Chat with anyone around the world about any freaking Topic | Delete messagges!
                 </p>
             </div>
 
@@ -246,9 +270,9 @@
             <div class="work__left">
 
                 <p class="featured__title">Instagram Clone</p>
-                <p class="featured__desc1"> A Social Media app to Post Images and Reels Videos. </p>
+                <p class="featured__desc1"> A Social Media app to Post Images and Reels imgs. </p>
                 <p class="featured__desc1"> React | Material UI | Firebase | Google Cloud Storage </p>
-                <p class="featured__desc2">Sign up to Post | Images and Videos with captions | Comments for other signed in users | Like Pic and video Posts evrytime you sign In | Responsively designed and Scalable.
+                <p class="featured__desc2">Sign up to Post | Post Images and imgs with captions | Comments for other signed in users | Like Picture and img Posts evrytime you sign In | A responsively designed and Scalable
                 </p>
             </div>
 
@@ -266,7 +290,7 @@
 
                 <p class="featured__title">Spotify Clone</p>
                 <p class="featured__desc1">A Music Player app built to look like Spotify with the Spotify API. </p>
-                <p class="featured__desc1"> React | Scalable and Responsive | Firebase | Spotify Auth n API </p>
+                <p class="featured__desc1"> React| Scalable and Responsive | Firebase | Spotify Auth n API </p>
                 <p class="featured__desc2">Sign in with your Spotify Account | View your weekly playlist | Control current Playback | Play n Pause n Skip | If you have Premium Spotify subscription.
                 </p>
             </div>
@@ -277,7 +301,7 @@
             <div class="work__left">
 
                 <p class="featured__title">Netflix Clone</p>
-                <p class="featured__desc1">A Movie App with the responsive n remarkable UI-UX of Netflix.</p>
+                <p class="featured__desc1">A Movie App with the remarkable responsive UI-UX of Netflix.</p>
                 <p class="featured__desc1"> React | Firebase | Material UI | API | react-youTube </p>
                 <p class="featured__desc2">Dynamically pulls in Trending Movies from the TMDB API. Click on any movie, Pulls the trailer from YouTube and Plays it in the app with all the user controls of youTube.
                 </p>
@@ -296,7 +320,7 @@
     <section id="testimonials">
         <h2>Testimonials</h2>
         <div class="testimonial__container">
-            <img src="https://www.gstatic.com/tv/thumb/persons/487130/487130_v9_bb.jpg" alt="testimonial image">
+            <img src="https://image.cnbcfm.com/api/v1/image/106806369-1607089960317-gettyimages-1229901686-GERMANY_MUSK.jpeg?v=1607090009" alt="testimonial image">
             <p>Really enjoyed working with Ashfaqe and would definitely hire him again. He did a great job on SEO and the responsive HTML/CSS template I wanted.</p>
             <h4>Paul Nishikawa</h4>
             <p class="pokejungle">PokéJungle, Minneapolis</p>
@@ -307,14 +331,18 @@
         <div class="contact__h2">
             <h2>Get in Touch</h2>
         </div>
-        <form action="mailto:ashfaqe.sa12@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm" class="contact__input" Name:>
+
+        <form id="contact-form" class="contact__input">
+
+            <input type="hidden" name="contact_number">
             <label> Name</label>
-            <input id="Name" name="Contact-Name" type="text">
+            <input name="user_name" type="text">
             <label>Email</label>
-            <input id="email" name="email" type="email">
+            <input name="user_email" type="email">
             <label>Message</label>
-            <textarea id="message" name="Contact-Message" placeholder="Wanna work together or any suggestions for me"></textarea>
-            <button>Submit</button>
+            <textarea name="message" placeholder="Wanna work together or any suggestions for me"></textarea>
+            <button type=submit value="Send">Submit</button>
+
         </form>
     </section>
     <section id="footer">
