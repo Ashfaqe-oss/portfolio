@@ -547,11 +547,11 @@ p {
 }
 
 #contact .contact__h2 {
-    padding: 1em 0 2em;
+    padding: 1em 0 0em;
 }
 
 #contact .contact__h2 h2 {
-    margin: 45px 5% 45px;
+    margin: 45px 5% 25px;
     font-family: 'Roboto Slab', serif;
 }
 
