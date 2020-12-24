@@ -563,7 +563,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
 
 #contact .contact__input label {
