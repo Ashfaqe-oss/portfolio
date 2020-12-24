@@ -595,7 +595,7 @@ p {
 #contact .contact__input button {
     border: none;
     padding: none;
-    margin: 2.5em auto 1em !important;
+    margin: 2.5em auto 0.5em !important;
     height: 39px;
     outline: none;
     border-radius: 11px;
