@@ -11,7 +11,7 @@ gsap.utils.toArray( '#mainHero' ).forEach( section => {
 
 
 let proxy = { skew: 0 },
-  skewSetter = gsap.quickSetter( ".transition3", "skewY", "deg" ), // fast
+  skewSetter = gsap.quickSetter( ".transition3, .featuredh4", "skewY", "deg" ), // fast
   clamp = gsap.utils.clamp( -5, 5 ); // don't let the skew go beyond 20 degrees. 
 
 ScrollTrigger.create( {
@@ -26,7 +26,7 @@ ScrollTrigger.create( {
 } );
 
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
-gsap.set( ".transition3", { transformOrigin: "right center", force3D: true } );
+gsap.set( ".transition3, .featuredh4", { transformOrigin: "right center", force3D: true } );
 
 
 gsap.from("#me", {
