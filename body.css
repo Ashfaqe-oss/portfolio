@@ -370,7 +370,7 @@ p {
 #work #projects p {
     font-size: 14px;
     font-weight: 700;
-    font-stretch: ultra-expanded;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 #work #projects img {
@@ -450,8 +450,8 @@ p {
     .featured__desc2 {
         font-size: 15px !important;
     }
-    #projects {
-        font-size: 16px;
+    #projects p {
+        font-size: 16px !important;
     }
     #projects img {
         width: 39px;
@@ -461,6 +461,9 @@ p {
 }
 
 @media (min-width: 1101px) {
+    #projects p {
+        font-size: 17px !important;
+    }
     .transition3 img {
         width: 617px !important;
         margin: 25px;
@@ -650,9 +653,13 @@ p {
     left: 0;
     z-index: 2;
     top: 0;
-    width: 230px;
+    width: 190px;
     -o-object-fit: contain;
     object-fit: contain;
+}
+
+.animate__animated {
+    animation-duration: 3.5s !important;
 }
 
 @media (min-width: 427px) {
@@ -678,6 +685,9 @@ p {
     .contact__h2 h2 {
         font-size: 33px;
     }
+    #contact .postman {
+        width: 230px;
+    }
     h2 {
         text-align: center;
     }
@@ -691,7 +701,7 @@ p {
         width: 49%;
     }
     .postman {
-        width: 330px !important;
+        width: 270px !important;
     }
 }
 
