@@ -15,7 +15,7 @@ gsap.utils.toArray( '#mainHero' ).forEach( section => {
 //work transitions
 let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter( ".transition3, .featuredh4, #projects", "skewY", "deg" ), // fast
-  clamp = gsap.utils.clamp( -3, 3 ); // don't let the skew go beyond 20 degrees. 
+  clamp = gsap.utils.clamp( -75, 5 ); // don't let the skew go beyond 20 degrees. 
 
 ScrollTrigger.create( {
   onUpdate: ( self ) => {
