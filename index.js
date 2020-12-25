@@ -16,7 +16,7 @@ let proxy = { skew: 0 },
 
 ScrollTrigger.create( {
   onUpdate: ( self ) => {
-    let skew = clamp( self.getVelocity() / -650 );
+    let skew = clamp( self.getVelocity() / -750 );
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if ( Math.abs( skew ) > Math.abs( proxy.skew ) ) {
       proxy.skew = skew;
