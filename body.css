@@ -189,7 +189,7 @@ p {
     margin-bottom: 2em;
     border-radius: 10px;
     width: 90%;
-    opacity: 0;
+    
 }
 
 #skills .transition2 .skill-title {
@@ -488,9 +488,6 @@ p {
     }
 }
 
-.transition1 {
-    opacity: 0;
-}
 
 #testimonials {
     margin: 7em 1em 8.5em;
