@@ -7,6 +7,10 @@ p {
     margin: 0;
 }
 
+.transition1, .transition2 {
+    opacity: 0;
+}
+
 #about {
     background-color: #e2e2e2;
     position: relative;
