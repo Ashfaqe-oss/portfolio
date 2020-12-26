@@ -311,7 +311,7 @@ p {
     -o-object-fit: contain;
     object-fit: contain;
     border-radius: 10px;
-    margin: 3px 0;
+    margin: 3px;
 }
 
 #work video {
