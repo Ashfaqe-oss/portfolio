@@ -507,8 +507,8 @@ p {
 
 #testimonials .testimonial__container img {
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
+    
+    height: 137px;
     margin: 35px;
     object-fit: contain;
 }
