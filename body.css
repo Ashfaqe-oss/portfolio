@@ -507,7 +507,7 @@ p {
 
 #testimonials .testimonial__container img {
     border-radius: 50%;
-    height: 145px;
+    height: 125px;
     margin: 35px;
     object-fit: contain;
 }
@@ -537,6 +537,9 @@ p {
         width: 53%;
         padding: 45px 5% 55px;
         margin: 0 auto;
+    }
+    #testimonials .testimonial__container img {
+        height: 145px;
     }
     #testimonials .testimonial__container p {
         margin: 1em;
