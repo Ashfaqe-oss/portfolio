@@ -15,21 +15,30 @@ gsap.utils.toArray( '#mainHero' ).forEach( section => {
 //work transitions
 let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter( ".transition3, .featuredh4, #projects", "skewY", "deg" ), // fast
-  clamp = gsap.utils.clamp( -5, 5 ); // don't let the skew go beyond 20 degrees. 
+  clamp = gsap.utils.clamp( -30, 30 ); // don't let the skew go beyond 20 degrees. 
 
 ScrollTrigger.create( {
   onUpdate: ( self ) => {
-    let skew = clamp( self.getVelocity() / -350 );
+    let skew = clamp(self.getVelocity() / -2700);
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if ( Math.abs( skew ) > Math.abs( proxy.skew ) ) {
       proxy.skew = skew;
-      gsap.to( proxy, { skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter( proxy.skew ) } );
+      gsap.to(proxy, {
+        skew: 0,
+        duration: 0.8,
+        ease: "power4.easeInOut",
+        overwrite: true,
+        onUpdate: () => skewSetter(proxy.skew),
+      });
     }
   }
 } );
 
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
-gsap.set( ".transition3, .featuredh4, #projects", { transformOrigin: "right center", force3D: true } );
+gsap.set(".transition3, .featuredh4, #projects", {
+  transformOrigin: "right center",
+  force3D: true,
+});
 
 
 //Smooth transitions
