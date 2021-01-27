@@ -733,6 +733,10 @@ p {
     opacity: 1 !important;
 }
 
+.emailjs-success button {
+    content: "Submitted"
+}
+
 #footer {
     background-color: #414141;
     color: #fff;
